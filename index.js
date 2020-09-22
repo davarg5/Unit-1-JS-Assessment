@@ -20,7 +20,7 @@ function getName(character) {
 }
 
 /**
- * ### Challenge `getFilmCount`
+ * ### Challenge 1: `getFilmCount`
  * MVP Challenge 🤓
  * 
  * @instructions
@@ -28,13 +28,15 @@ function getName(character) {
  *
  * Sample data expected output: 5
  */
-function getFilmCount(character) {
-  // TODO: Add your code inside the functions (others below).
-
+function getFilmCount(character) 
+{
+  return character.films.length;
 }
 
+console.log(getFilmCount(lukeSkywalker));
+
 /**
- * ### Challenge `getSecondStarshipName`
+ * ### Challenge 2: `getSecondStarshipName`
  * MVP Challenge 🤓
  * 
  * @instructions
@@ -42,8 +44,17 @@ function getFilmCount(character) {
  * If length is 0. Return 'none'
 */
 function getSecondStarshipName(character) {
-  // TODO: Add your code here.
+	if(character.starships.length === 0)
+	{
+		return 'none';
+	}
+	else
+	{
+		return character.starships[1].name;
+	}
 }
+
+console.log(getSecondStarshipName(lukeSkywalker));
 
 /**
  * ### Challenge `getSummary`
